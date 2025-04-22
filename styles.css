@@ -40,17 +40,10 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     border: black 1px solid;
     border-radius: 10px;
+    border-style: solid;;
+    border-width: 1px;
 }
   
-nav a {
-    color: hsl(0, 0%, 0%);
-    display: inline-block;
-    font-family: 'Roboto Slab', serif;
-}
-
-nav a:hover {
-    text-decoration:solid;
-}
 
 main {
     margin-top: 20px;
@@ -115,6 +108,58 @@ audio source {
     justify-items: center;
     align-items: center;
     margin-top: 10px
+}
+.logo-grid img {
+    height: 200px;             /* keeps aspect via width attr */
+    width: auto;
+}
+
+/* Selector Stuff (LOOK BACK TO STUDY) */
+/* 1. ATTRIBUTE SELECTOR
+   Selects any <input> whose type attribute equals "date" */
+input[type="text"] {
+    border: 1px dashed #555;
+}
+/* 2. ADJACENT SIBLING (+)
+   Selects an <input> that immediately follows a <label> */  
+label + input {
+    margin-top: 0.5rem;          /* tiny space above the input */
+}
+
+/* 3. GENERAL SIBLING (~)
+   Selects every <ul> and <ol> that comes after any <h3> */
+h3 ~ ul, ol {
+    background-color: color-mix(in srgb, #d6cfb9 90%, rgb(75, 72, 59) 10%);
+}
+
+/* 4. ELEMENT.CLASS
+   Selects <div> elements with class="logo-grid" */
+div.logo-grid {
+    padding: 10px;         /* adds space around your logo grid container */
+}
+
+/* 5. :has() PSEUDO‑CLASS
+   Selects any <details> that contains an element with class="logo-grid" */
+details:has(.logo-grid) {
+    background-color: color-mix(in srgb, #d6cfb9 90%, rgb(75, 72, 59) 10%);
+}
+
+/* Nested selector: within nav, “& > a” targets its direct child links, and “&:hover, &:focus” scopes their hover/focus states */
+nav {
+    /* Base link styles */
+    & > a {
+        color: hsl(0,0%,0%);
+        display: inline-block;
+        font-family: 'Roboto Slab', serif;
+        text-decoration: none;
+    
+        /* Hover & focus state */
+        &:hover,
+        &:focus {
+            color: ivory;
+            background-color: var(--glow-color, #ff5733);
+        }
+    }
 }
 
 /* ──────────────────────────────────────────────────────────
