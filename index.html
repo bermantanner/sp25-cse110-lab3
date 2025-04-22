@@ -4,21 +4,21 @@
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>CSE110 Meeting Minutes</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
     <style>
         /* Internal CSS for the form section */
         #example-form {
-            background-color: #cbc4af;
+            background-color: color-mix(in srgb, #d6cfb9 90%, rgb(75, 72, 59) 10%);
         }
         #example-form textarea {
             width: 100%;
-            border: 1px solid firebrick;
         }
         #form1-main {
             padding: 20px;
         }
         #form1-other {
             margin: 20px;
+            padding: 20px;
         }
     </style>
   </head>
@@ -79,10 +79,10 @@
                 <h3>Recent Logo Ideas</h3>
                 <details>
                     <summary>Click to view logos</summary>
-                    <img src="TEAM7LOGO2.png" width="200" alt="Team 7 Logo 1">
-                    <img src="TEAM7LOGO3.png" width="200" alt="Team 7 Logo 2"><br>
-                    <img src="TEAM7LOGOTest1.png" width="200" alt="Team 7 Logo 3">
-                    <img src="team7logostolen.png" width="200" alt="Team 7 Logo 4">
+                    <img src="media/TEAM7LOGO2.png" width="200" alt="Team 7 Logo 1">
+                    <img src="media/TEAM7LOGO3.png" width="200" alt="Team 7 Logo 2"><br>
+                    <img src="media/TEAM7LOGOTest1.png" width="200" alt="Team 7 Logo 3">
+                    <img src="media/team7logostolen.png" width="200" alt="Team 7 Logo 4">
                 </details>
 
                 <h3>Recent Name Ideas</h3>
@@ -94,15 +94,36 @@
                 
                 <h3>Team Video</h3>
                 <video width="400" controls>
-                    <source src="trimmedCSE110TEAM7VIDEO.mov" type="video/mp4">
+                    <source src="media/trimmedCSE110TEAM7VIDEO.mov" type="video/mp4">
                     Your browser doesn't support the video tag.
                 </video>
                 <h3>Team Video (Audio Only)</h3>
                 <audio controls>
-                    <source src="CSE_110_Team_7audioonly.m4a" type="audio/mpeg">
+                    <source src="media/CSE_110_Team_7audioonly.m4a" type="audio/mpeg">
                     Your browser doesn't support the audio element.
                 </audio>
             </section>
+
+            <details>
+                <summary>Click to View Unit Demo (Absolute vs Relative)</summary>
+              
+                <section id="unit-demo">
+                  <h2>Unit Showcase</h2>
+              
+                  <h3>Absolute Units</h3>
+                  <div style="width:5cm; padding:10pt; border: 1pt solid black; background-color: #e0f7fa; margin-bottom: 1vh;">
+                    I’m 5cm wide, padded with 10pt, and bordered with 1pt!
+                  </div>
+              
+                  <p style="font-size: 24px;">This paragraph uses <code>px</code> for font-size (24px).</p>
+              
+                  <h3>Relative Units</h3>
+                  <div style="font-size: 1.5em; padding: 1rem; max-width: 80vw; line-height: 150%; background-color: lavender; margin-bottom: 2vh;">
+                    I use <code>em</code> for font size, <code>rem</code> for padding, and <code>vw</code> for width. I also have <code>vh</code> spacing.
+                  </div>
+                </section>
+            </details>
+              
 
             <section id="example-form">
                 <fieldset id="form1-main">
@@ -157,7 +178,8 @@
             </section>
         </main>
         <footer>
-            <p>&copy; 2025 CSE110 Team 7</p>
+            <p>&copy; 2025 CSE110 Team 7</p> 
+            <img src="media/firebrick_flower.png" alt="Firebrick Flower" width="200" height="200">
         </footer>
     </body>
 </html>

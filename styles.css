@@ -9,27 +9,31 @@
     box-sizing: border-box;
   }
 
+:root {
+--glow-color: color(display-p3 1 0.4 0.2); /* Vibrant orange-red */
+}
+
 /*
     The <body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
     Important thing I learned: There can only be one <body> element in an HTML document.
 */
 body {
     font-family: monospace;
-    background-color: #d6cfb9;
+    background-color: rgb(214, 207, 185);
     line-height: 1.6; /* Adds vertical spacing between lines */
     padding: 40px;    /* Adds some space around the edges of the page */
 }
 
 h1 {
-    color:firebrick
+    color: firebrick;
 }
 
 header {
-    background-color: #cbc4af; 
+    background-color: color-mix(in srgb, #d6cfb9 90%, rgb(75, 72, 59) 10%);
   }
 
 nav a {
-    color: #000000;
+    color: hsl(0, 0%, 0%);
 }
 
 nav a:hover {
@@ -39,3 +43,18 @@ nav a:hover {
 main {
     margin-top: 20px;
 }
+
+button {
+    background-color: var(--glow-color, #ff5733); /* fallback = regular vivid orange */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+  button:hover {
+    background-color: color-mix(in srgb, var(--glow-color, #ff5733) 70%, white 30%);
+}
+
