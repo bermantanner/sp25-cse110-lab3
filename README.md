@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-https://bermantanner.github.io/Lab2_Starter/
+https://bermantanner.github.io/sp25-cse110-lab3/
