@@ -1,0 +1,41 @@
+
+/* 
+    This rule selects every single HTML element (* is the universal selector).
+    From research, it seems "resetting" the default spacing applied by browsers helps to make our styling consistent.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/*
+    The <body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+    Important thing I learned: There can only be one <body> element in an HTML document.
+*/
+body {
+    font-family: monospace;
+    background-color: #d6cfb9;
+    line-height: 1.6; /* Adds vertical spacing between lines */
+    padding: 40px;    /* Adds some space around the edges of the page */
+}
+
+h1 {
+    color:firebrick
+}
+
+header {
+    background-color: #cbc4af; 
+  }
+
+nav a {
+    color: #000000;
+}
+
+nav a:hover {
+    text-decoration:solid;
+}
+
+main {
+    margin-top: 20px;
+}
