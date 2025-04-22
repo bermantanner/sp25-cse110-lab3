@@ -1,9 +1,9 @@
 # Standup Meeting Notes Template
 
 ## Attendees
-- [ ] Name 1
-- [ ] Name 2
-- [ ] Name 3
+- Name 1
+- Name 2
+- Name 3
 
 ## Meeting Type
 - [ ] Daily Standup
