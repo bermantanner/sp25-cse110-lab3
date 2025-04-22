@@ -106,3 +106,12 @@ hr {
 audio source {
     display: none; /* This hides the audio source element */
 }
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px
+}
