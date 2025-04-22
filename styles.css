@@ -29,10 +29,19 @@ h1 {
 }
 
 header {
+    position: sticky;
+    top: 0; /* Makes the header stick to the top of the viewport */
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: color-mix(in srgb, #d6cfb9 90%, rgb(75, 72, 59) 10%);
     padding: 10px 15px 10px 15px;
-  }
-
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border: black 1px solid;
+    border-radius: 10px;
+}
+  
 nav a {
     color: hsl(0, 0%, 0%);
     display: inline-block;
@@ -60,6 +69,10 @@ button:hover {
     background-color: color-mix(in srgb, var(--glow-color, #ff5733) 70%, white 30%);
 }
 
+button:active {
+    transform: scale(0.90);
+}
+
 ol {
     padding-left: 2.4em; 
     margin-bottom: 10px; /* Adds space below the list */
@@ -71,6 +84,7 @@ ul {
 }
 
 .meeting-header {
+    position: relative;
     max-width: 700px;
     min-width: 300px;
     width: 80%;
