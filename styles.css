@@ -21,7 +21,7 @@ body {
     font-family: monospace;
     background-color: rgb(214, 207, 185);
     line-height: 1.6; /* Adds vertical spacing between lines */
-    padding: 40px;    /* Adds some space around the edges of the page */
+    padding: 20px;    /* Adds some space around the edges of the page */
 }
 
 h1 {
@@ -30,6 +30,7 @@ h1 {
 
 header {
     background-color: color-mix(in srgb, #d6cfb9 90%, rgb(75, 72, 59) 10%);
+    padding: 10px 15px 10px 15px;
   }
 
 nav a {
@@ -54,7 +55,12 @@ button {
     transition: background-color 0.3s;
 }
   
-  button:hover {
+button:hover {
     background-color: color-mix(in srgb, var(--glow-color, #ff5733) 70%, white 30%);
+}
+
+ul, ol {
+    padding-left: 1.5em; 
+    margin-bottom: 10px; /* Adds space below the list */
 }
 
